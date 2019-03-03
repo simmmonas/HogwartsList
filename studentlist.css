@@ -1,23 +1,117 @@
-body {
-    background-color: aliceblue;
-}
-
 .gryffindor {
-    background-color: #ce3a0a;
-    color: #fdb02e
+  background-color: #ce3a0a;
+  color: #fdb02e;
 }
 
-.hufflepuf {
-    background-color: #ffc02a;
-    color: #0b0000  
+.hufflepuff {
+  background-color: #ffc02a;
+  color: #0b0000;
 }
 
 .ravenclaw {
-    background-color: #395f9d;
-    color: #e9ba36  
+  background-color: #395f9d;
+  color: #e9ba36;
 }
 
 .slytherin {
-    background-color: #588c39;
-    color: #c0b1c6  
+  background-color: #588c39;
+  color: #c0b1c6;
+}
+
+.modal {
+  padding: 2em 1em 0em 1em;
+  border: 1px solid #888;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imgleft inforight close";
+}
+
+.imgleft {
+  grid-area: imgleft;
+}
+
+.inforight {
+  grid-area: inforight;
+}
+
+.close {
+  grid-area: close;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.no {
+  background-image: url(no.jpg);
+  width: 570px;
+  height: 570px;
+  z-index: 10;
+  position: absolute;
+  bottom: 4em;
+  left: 14em;
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+}
+
+#closeb {
+  margin: 4em 2em 3em 22em;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+}
+
+.left {
+  grid-area: left;
+}
+
+#expelled {
+  grid-area: right;
+}
+
+.modal {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  bottom: 8em;
+  left: 14em;
+}
+
+table {
+  text-align: center;
+}
+
+td,
+th {
+  padding-right: 6em;
+  text-align: left;
+}
+
+main {
+  margin: 2em;
 }

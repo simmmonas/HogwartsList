@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="studentlist.css">
+    <title>Student list</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <nav>
+      <button id="btnAll">ALL</button>
+      <button id="sort1n">Sort By First Name</button>
+      <button id="sort2n">Sort By Second Name</button>
+      <button id="Gryffindor" data-house="Gryffindor">Gryffindor</button>
+      <button id="Hufflepuff" data-house="Hufflepuff">Hufflepuff</button>
+      <button id="Ravenclaw" data-house="Ravenclaw">Ravenclaw</button>
+      <button id="Slytherin" data-house="Slytherin">Slytherin</button>
+    </nav>
+    <div class="list">
+      <div class="left">
+    <main class="studentList"><h2>STUDENT LIST</h2></main>
+  </div>
+
+   
+    <template id="listtemplate">
+      <article>
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Info</th>
+            <th>House</th>
+          </tr>
+          <tr>
+            <td id="firstN"></td>
+            <td id="lastN"></td>
+            <td> <button id="rmbutton"> -read more-</td></button>
+            <td id="house"></td>
+            <td><button id="expelb" data-action="remove">Expel</button></td>
+          </tr>
+        </table>
+      </article>
+    </template>
+ 
+
+    <div id="expelled">EXPELLED: <span id="expelledS"></span></div>
+  </div>
+  </div>
+  
+
+      <div class="modal">
+          <span class="close">&times;</span>
+          <div class="imgleft">
+        <img class="imgs" id="img" src="" alt="Student Face" />
+      </div>
+      <div class="inforight">
+        <h4 class="name">name</h4>
+        <h4 class="surname">surname</h4>
+        <h3 class="blood"></h3>
+        <h2 class="house"></h2>
+      </div>
+      </div>
+
+
+   <div class="no"><button id="closeb">close</button></div>
+
+    <script src="studentlist.js"></script>
+    
+  </body>
+</html>
